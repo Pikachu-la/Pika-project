@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+<title>Number system Converter</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+   h1 { font-size:1.6rem; }
+   h2 { font-size:1.6rem; }
+   h4 { font-size:1.4rem; }
+   #calcform { text-align: center; max-width:1500px; padding:30px; background:mediumorchid; border:1px solid plum; border: radius 7px; border-style: dashed; } 
+   #calcform button img { filter:invert(100%); }
+   #cal2tbl th { font-weight: normal; }
+   #cal2tbl td { line-height:1; }
+   #cal2tbl th p { word-break: break-all; }
+   #cal2tbl p { line-height:1; }
+   #cal2tbl tbody tr td:nth-child(3) { background:purple; border:dashed 1px plum; }
+   /*#cal { background:#e9ecef; padding:.375rem .75rem; font-size:1rem; color:#495057; border:1px solid #ced4da; }*/
+   #cal { background:#e9ecef; height:auto; }
+   .btn span { font-weight:bold; font-size:large; }
+</style>
+
+</head>
+<body>
+<h1 style="text-align: center;">Number System Converter</h1>
+
+</ul>
+<br>
+<form id="calcform" autocomplete="off">
+<div class="form-group">
+<label for="x">Enter number</label>
+<input type="text" id="x" name="x" class="form-control form-control-lg" required autofocus>
+</div>
+<div class="form-group">
+<label for="sel1">From Base</label>
+<select name="sel1" id="sel1" class="form-control">
+<option value="2">2 (binary)</option>
+<option value="8">8 (octal)</option>
+<option value="10" selected>10 (decimal)</option>
+<option value="16">16 (hex)</option>
+</select>
+</div>
+<div class="form-group">
+<label for="sel2">To base</label>
+<select name="sel2" id="sel2" class="form-control">
+<option value="2">2 (binary)</option>
+<option value="8">8 (octal)</option>
+<option value="10">10 (decimal)</option>
+<option value="16" selected>16 (hex)</option>
+
+
+</select>
+</div>
+<div class="form-group">
+<button  type="button" title="Convert" class="btn btn-secondary" onclick="onconvert()"><span></span> Convert</button>
+
+<button type="reset" title="Reset" class="btn btn-secondary" onclick="onrst()"><span>&times;</span> clear</button>
+
+</div>
+<div class="form-group">
+<label for="y">Result</label>
+<textarea rows="1" id="y" class="form-control form-control-lg" readonly></textarea>
+</div>
+
+
+</body>
+<a style="color: mintcream;" href="../../index.html">Click me to go back!</a>
+
+</html>

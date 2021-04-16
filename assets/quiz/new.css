@@ -1,0 +1,12 @@
+#divone{width:50%; float: left;background-color:rgb(74, 140, 207);}
+#divtwo{width:50%;float:right;}
+.title{color:white; }
+img{width:250px; width:250px; border-radius: 250px; margin-left:20%;}
+#name{ margin-left: 5%; margin-top: 2%;}
+p{margin-left: 2%;font-size: larger;}
+.content{color:white;}
+.title{color:red;text-decoration:underline;margin-left: 5%;}
+#sth{color:white; font-size: large;}
+.list{ margin-left: 5%; margin-bottom: 20px;}
+#No{ margin-left: 2%;}
+#gg{font-size: large;}
